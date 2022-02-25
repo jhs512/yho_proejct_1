@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     # 서드파티
     'django_bootstrap5',
-    'debug_toolbar',
     'django_pydenticon',
-    'django-extensions',
+    'django_extensions',
     'hashtags',
+    'django_summernote',
     # 로컬
     'accounts.apps.AccountsConfig',
     'articles.apps.ArticlesConfig',
@@ -49,7 +49,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',  # 추가
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
